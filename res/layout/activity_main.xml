@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <include
+        android:id="@+id/top_calendar"
+        layout="@layout/top_calendar_layout" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/datePager"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <include
+        android:id="@+id/bottom_calendar"
+        layout="@layout/bottom_calendar_layout" />
+
+</LinearLayout>

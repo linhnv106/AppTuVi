@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_calendar_layout_height"
+    android:background="#000000"
+    android:orientation="horizontal"
+    android:padding="1dp" >
+
+    <TextView
+        android:id="@+id/top_cal_date"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:textStyle="bold"
+        android:textColor="@color/top_cal_date_color"
+        android:textSize="@dimen/top_cal_date_txt_size" />
+
+    <TextView
+        android:id="@+id/top_cal_year"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:textColor="@color/top_cal_year_color"
+        android:textSize="@dimen/top_cal_year_txt_size"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/top_cal_child_margin"
+        android:layout_marginRight="@dimen/top_cal_child_margin" />
+
+    <TextView
+        android:id="@+id/top_cal_month"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"        
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:textStyle="bold"
+        android:textColor="@color/top_cal_month_color"
+        android:textSize="@dimen/top_cal_month_txt_size" />
+
+</LinearLayout>

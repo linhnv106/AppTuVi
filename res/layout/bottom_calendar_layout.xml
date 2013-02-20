@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_calendar_layout_height"
+    android:background="#000000"
+    android:orientation="horizontal"
+    android:padding="1dp" >
+
+    <LinearLayout
+        android:id="@+id/bottom_cal_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:background="#ffffff"
+       />
+
+    <LinearLayout
+        android:id="@+id/bottom_cal_center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:layout_marginLeft="@dimen/top_cal_child_margin"
+        android:layout_marginRight="@dimen/top_cal_child_margin" />
+
+    <LinearLayout
+        android:id="@+id/bottom_cal_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"        
+        android:layout_weight="1"
+        android:background="#ffffff"
+ />
+
+</LinearLayout>
