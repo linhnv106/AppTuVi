@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 /**
@@ -20,13 +21,19 @@ import android.widget.TextView;
  */
 public class MainActivity extends BaseActivity {
 	private final String TAG="MainActivity";
-	private final int PAGE_NUMS=3;
 	private ViewPager mDatePager;
 	private PagerAdapter mDatePagerAdapter;
 	private LinearLayout mTopCalLayout;//top calendar layout
 	private Calendar mCalendar;//current date
-	private boolean mIsScrolled;
 	private ArrayList<Float> mPos;
+	private int mCurrentFocused;
+	
+	
+	public class Page{
+		public LinearLayout pageView =(LinearLayout)getLayoutInflater().inflate(R.layout.date_display_layout, null);
+		public TextView dateText=(TextView)pageView.findViewById(R.id.date_view);
+	}
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -63,50 +70,55 @@ public class MainActivity extends BaseActivity {
 			@Override
 			public void onPageSelected(int arg0) {
 				mPos.clear();
-				LogUtils.error(TAG, "onPageSelected  :" +mDatePager.getCurrentItem() );
+				mCurrentFocused=arg0;
+				LogUtils.error(TAG, "onPageSelected  :" +mCurrentFocused );
 			}
 			
 			@Override
 			public void onPageScrolled(int arg0, float arg1, int arg2) {
 				try{
 					LogUtils.infor(TAG, "onPageScrolled  position :" +arg0);
-					mPos.add(arg1);
 					
-					if(mPos.size()>0){
-						if (arg0 == PAGE_NUMS-1
-                                & mPos.get(0) > mPos.get(mPos.size() - 1)
-                                & mIsScrolled == true) {
-							LogUtils.error(TAG,"<----- swipe <-----  right" );
-                            try {
-                            	mIsScrolled = false;
-                                mDatePager.setCurrentItem(1, false);
-                            } catch (Exception e) {
-                              LogUtils.error(TAG,"<----- swipe <-----  " + e.toString());
-                            }
-						}else if (arg0 == 0
-	                            & mPos.get(0) < mPos.get(mPos.size() - 1)
-	                            & mIsScrolled == true) {
-	                        try {
-	                            mIsScrolled = false;
-	                            mDatePager.setCurrentItem(PAGE_NUMS - 1,
-	                                    false);
-	                        } catch (Exception e) {
-	                        	LogUtils.error(TAG,"<----- swipe <-----  " + e.toString());
-	                        }
-
-	                    } else if (arg0 == 0 & mPos.size() == 1
-	                            & mIsScrolled == true) {
-	                        try {
-	                        	mIsScrolled = false;
-	                            mDatePager.setCurrentItem(PAGE_NUMS - 1,
-	                                    false);
-	                        } catch (Exception e) {
-	                        	LogUtils.error(TAG,"<----- swipe <-----  " + e.toString());
-	                        }
-
-	                    }
-
-					}
+					
+//					mPos.add(arg1);
+//					
+//					if(mPos.size()>0){
+//						if (arg0 == PAGE_NUMS-1
+//                                & mPos.get(0) > mPos.get(mPos.size() - 1)
+//                                & mIsScrolled == true) {
+//							LogUtils.error(TAG,"<----- swipe <-----  right" );
+//                            try {
+//                            	mIsScrolled = false;
+//                                mDatePager.setCurrentItem(1, false);
+//                            } catch (Exception e) {
+//                              LogUtils.error(TAG,"<----- swipe <-----  " + e.toString());
+//                            }
+//						}else if (arg0 == 0
+//	                            & mPos.get(0) < mPos.get(mPos.size() - 1)
+//	                            & mIsScrolled == true) {
+//	                        try {
+//	                            mIsScrolled = false;
+//	                            mDatePager.setCurrentItem(PAGE_NUMS - 1,
+//	                                    false);
+//	                            LogUtils.error(TAG,"<----- swipe <-----  2" );
+//	                        } catch (Exception e) {
+//	                        	LogUtils.error(TAG,"<----- swipe <-----  " + e.toString());
+//	                        }
+//
+//	                    } else if (arg0 == 0 & mPos.size() == 1
+//	                            & mIsScrolled == true) {
+//	                        try {
+//	                        	mIsScrolled = false;
+//	                            mDatePager.setCurrentItem(PAGE_NUMS - 1,
+//	                                    false);
+//	                            LogUtils.error(TAG,"<----- swipe <-----  3" );
+//	                        } catch (Exception e) {
+//	                        	LogUtils.error(TAG,"<----- swipe <-----  " + e.toString());
+//	                        }
+//
+//	                    }
+//
+//					}
 				}catch(Exception e){
 					LogUtils.error(TAG, "DatePager Error :" +e.getMessage());
 				}
@@ -114,8 +126,19 @@ public class MainActivity extends BaseActivity {
 			
 			@Override
 			public void onPageScrollStateChanged(int arg0) {
-				mIsScrolled=true;
-				LogUtils.infor(TAG, "onPageScrollStateChanged  :" +mDatePager.getCurrentItem() );
+				if(arg0==ViewPager.SCROLL_STATE_IDLE){
+					
+					if(mCurrentFocused==0){
+						LogUtils.debug(TAG, "go left");
+					}else if(mCurrentFocused==2){
+						LogUtils.debug(TAG, "go right");
+					}
+					
+					 mDatePager.setCurrentItem(1,
+                             false);
+						LogUtils.infor(TAG, "onPageScrollStateChanged  :" +mDatePager.getCurrentItem() );
+
+				}
 			}
 		});
 		
