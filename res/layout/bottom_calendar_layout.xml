@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/bottom_calendar_layout_height"
-    android:background="#000000"
+    android:background="@drawable/bar_content"
+    android:baselineAligned="false"
     android:orientation="horizontal"
     android:padding="1dp" >
 
@@ -10,28 +11,90 @@
         android:id="@+id/bottom_cal_left"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:gravity="center_vertical|center_horizontal"
         android:layout_weight="1"
-        android:background="#ffffff"
-       />
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lunar_name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/bottom_cal_lunar_name_text_paddingTop"
+            android:text="lunar_name_txt"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_cal_lunar_name_text_size" />
+
+        <TextView
+            android:id="@+id/lunar_name_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/bottom_cal_lunar_name_text_paddingTop"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_cal_lunar_name_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lunar_name_time_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/bottom_cal_lunar_name_text_paddingTop"
+            android:text="lunar_name_txt"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_cal_lunar_name_text_size" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_cal_center"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:layout_weight="1"
-        android:background="#ffffff"
+        android:layout_gravity="bottom|center"
         android:layout_marginLeft="@dimen/top_cal_child_margin"
-        android:layout_marginRight="@dimen/top_cal_child_margin" />
+        android:layout_marginRight="@dimen/top_cal_child_margin"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lunar_date_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_cal_lunar_date_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lunar_month_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bottom_cal_lunar_month_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/bottom_cal_right"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:gravity="center"        
         android:layout_weight="1"
-        android:background="#ffffff"
- />
+        android:layout_marginLeft="5dp"
+        android:background="@android:color/transparent"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/lunar_date_good_hours_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="italic" />
+    </LinearLayout>
 
 </LinearLayout>

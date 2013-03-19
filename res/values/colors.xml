@@ -2,7 +2,14 @@
 <resources>
     <color name="date_text_color">#ffffffff</color>
     <color name="date_des_text_color">#ffffffff</color>
-    <color name ="top_cal_date_color">#000000</color>
-    <color name ="top_cal_month_color">#000000</color>
-    <color name ="top_cal_year_color">#000000</color>
+    <color name ="top_cal_date_color">#FF9900</color>
+    <color name ="top_cal_month_color">#ffffff</color>
+    <color name ="top_cal_year_color">#FF9900</color>
+    <color name ="sunday_text_color">#FF6666</color>
+     <color name ="sunday_other_month_text_color">#CC6666</color>
+    <color name="saturday_text_color">#006666</color>
+     <color name="saturday_text_other_month_color">#336666</color>
+    <color name="regular_day_text_color">#006699</color>
+    <color name="menu_pressed">#330099</color>
+    <color name="menu_normal">#006699</color>
 </resources>

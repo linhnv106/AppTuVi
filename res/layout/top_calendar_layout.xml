@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/top_calendar_layout_height"
-    android:background="#000000"
+    android:background="@drawable/top_header"
     android:orientation="horizontal"
     android:padding="1dp" >
 
@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:gravity="center_vertical|center_horizontal"
         android:layout_weight="1"
-        android:background="#ffffff"
+        android:background="@android:color/transparent"
         android:textStyle="bold"
         android:textColor="@color/top_cal_date_color"
         android:textSize="@dimen/top_cal_date_txt_size" />
@@ -23,7 +23,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:layout_weight="1"
-        android:background="#ffffff"
+        android:background="@android:color/transparent"
         android:textColor="@color/top_cal_year_color"
         android:textSize="@dimen/top_cal_year_txt_size"
         android:textStyle="bold"
@@ -36,7 +36,7 @@
         android:layout_height="match_parent"
         android:gravity="center"        
         android:layout_weight="1"
-        android:background="#ffffff"
+        android:background="@android:color/transparent"
         android:textStyle="bold"
         android:textColor="@color/top_cal_month_color"
         android:textSize="@dimen/top_cal_month_txt_size" />

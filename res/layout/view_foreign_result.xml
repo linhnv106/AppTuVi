@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView android:id="@+id/view_foreign_result_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+	<ScrollView android:id="@+id/view_foreign_result_scrollView"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    >
+	    <LinearLayout android:id="@+id/view_foreign_result_ll"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        >
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text=" Ngày sinh của bạn"
+	            android:gravity="center"
+	            android:layout_marginTop="50dp"
+	            android:layout_marginLeft="50dp"
+	            android:layout_marginRight="50dp"
+	            />
+	        <TextView android:id="@+id/view_foreign_givenDate"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Ngay sinh"
+	            android:gravity="center"
+	            android:layout_margin="10dp"
+	            />
+	         <TextView android:id="@+id/view_foreign_chinese_name"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Chinese name :"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="10dp"
+	            android:layout_marginTop="10dp"
+	            />
+	         <TextView android:id="@+id/view_foreign_korean_name"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="korean name :"
+	            android:paddingLeft="10dp"
+	            android:gravity="center_vertical"
+	            android:layout_marginTop="10dp"
+	            />	        
+	            <TextView android:id="@+id/view_foreign_laos_name"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="laos name :"
+	            android:paddingLeft="10dp"
+	            android:gravity="center_vertical"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginBottom="50dp"
+	            />	        	        	        
+	    </LinearLayout>
+	    
+	</ScrollView>
+</LinearLayout>

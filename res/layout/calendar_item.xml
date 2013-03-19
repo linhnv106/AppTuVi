@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/calendar_cell"
+    android:orientation="vertical"
+    android:padding="2dip" >
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#0000D7"
+        android:textSize="18sp"
+        android:textStyle="bold" 
+        android:text="22"
+        android:gravity="center"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/lunarDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0033CC"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:text="12"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="bottom|right"
+        />
+</FrameLayout>

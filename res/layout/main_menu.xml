@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_menu_height"
+    android:background="@drawable/bar_menu"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btn_menu_main"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/icon_danhmuc"
+        android:paddingTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:text="Menu"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="4" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/menuPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_menu_control"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/icon_arrow"
+        android:paddingTop="10dp"
+        android:textSize="12sp"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:text="Next" />
+
+</LinearLayout>

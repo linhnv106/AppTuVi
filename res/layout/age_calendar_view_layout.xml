@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="1" >
+
+        <com.ditech.linhnv.apps.tuvi.view.CircleLayout
+            xmlns:app="http://schemas.android.com/apk/res/com.ditech.linhnv.apps.tuvi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            app:angleOffset="90.0" >
+
+            <ImageButton android:id="@+id/mouse_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/buffalo_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/tiger_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/cat_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/dragon_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/snake_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/horse_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/goat_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/monkey_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/chicken_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/dog_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/pig_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+        </com.ditech.linhnv.apps.tuvi.view.CircleLayout>
+    </FrameLayout>
+
+    <include layout="@layout/main_menu" />
+
+</LinearLayout>

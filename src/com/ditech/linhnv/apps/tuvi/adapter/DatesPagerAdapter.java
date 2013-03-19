@@ -1,8 +1,11 @@
 package com.ditech.linhnv.apps.tuvi.adapter;
 
 import java.util.Calendar;
+import java.util.Locale;
+import java.util.Random;
 
 import com.ditech.linhnv.apps.tuvi.R;
+import com.ditech.linhnv.apps.tuvi.activity.MainActivity.Page;
 import com.ditech.linhnv.apps.tuvi.fragments.DatePageFragment;
 import com.ditech.linhnv.apps.tuvi.utils.LogUtils;
 
@@ -18,6 +21,7 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 /**
  * 
  * @author linhnv
@@ -31,14 +35,28 @@ public class DatesPagerAdapter extends PagerAdapter{
 	private LayoutInflater mInflater;
 	
 	private Calendar mCurrent;
+	private Page[] mPages = null;
+	ViewPager mContainer;
 	
+	public Page[] getmPages() {
+		return mPages;
+	}
+
+
+	public void setmPages(Page[] mPages) {
+		this.mPages = mPages;
+	}
+
+
 	public DatesPagerAdapter() {
 		super();
 	}
 
 	
-	public DatesPagerAdapter(FragmentActivity fragment) {
+	public DatesPagerAdapter(FragmentActivity fragment,Page[] pages) {
 		super();
+		mCurrent=Calendar.getInstance(new Locale("vi"));
+		this.mPages=pages;
 		mInflater=(LayoutInflater)fragment.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 	}
 
@@ -51,7 +69,7 @@ public class DatesPagerAdapter extends PagerAdapter{
 
 	@Override
 	public int getCount() {
-		return NUM_PAGES;
+		return this.mPages.length;
 	}
 
 	@Override
@@ -62,9 +80,35 @@ public class DatesPagerAdapter extends PagerAdapter{
 	@Override
 	public Object instantiateItem(ViewGroup container, int position) {
 		LogUtils.debug("instantiateItem", " position: "+position);	
-		View v =(View)mInflater.inflate(R.layout.date_display_layout, container,false);
-		((ViewPager)container).addView(v, 0);
-		return v;
+//		mContainer=(ViewPager)container;
+		LinearLayout view = mPages[position].getPageView();
+		
+		
+		String date=String.valueOf(mCurrent.get(Calendar.DATE));
+		
+		switch(position){
+		case 0:
+			
+			date=String.valueOf(mCurrent.get(Calendar.DATE)-1);
+			mPages[position].setDateText(date);
+			break;
+		case 1:
+			date=String.valueOf(mCurrent.get(Calendar.DATE));
+			mPages[position].setDateText(date);
+			break;
+		case 2:
+			
+			date=String.valueOf(mCurrent.get(Calendar.DATE)+1);
+			mPages[position].setDateText(date);
+			break;
+		 default:
+			 break;
+		}
+		
+//		View v =(View)mInflater.inflate(R.layout.date_display_layout, container,false);
+		((ViewPager)container).addView(view, 0);
+//		temp=null;
+		return view;
 	}
 
 

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/by_name_menu01"
+            style="@style/ByNameMenu"
+            android:clickable="true"
+            android:onClick="onMenuClick"
+            android:text="@string/by_name_menu01_text" />
+
+        <TextView
+            android:id="@+id/by_name_menu02"
+            style="@style/ByNameMenu"
+            android:clickable="true"
+            android:onClick="onMenuClick"
+            android:text="@string/by_name_menu02_text" />
+
+        <TextView
+            android:id="@+id/by_name_menu03"
+            style="@style/ByNameMenu"
+            android:clickable="true"
+            android:onClick="onMenuClick"
+            android:text="@string/by_name_menu03_text" />
+
+        <TextView
+            android:id="@+id/by_name_menu04"
+            style="@style/ByNameMenu"
+            android:clickable="true"
+            android:onClick="onMenuClick"
+            android:text="@string/by_name_menu04_text" />
+
+        <TextView
+            android:id="@+id/by_name_menu05"
+            style="@style/ByNameMenu"
+            android:clickable="true"
+            android:onClick="onMenuClick"
+            android:text="@string/by_name_menu05_text" />
+
+        <TextView
+            android:id="@+id/by_name_menu06"
+            style="@style/ByNameMenu"
+            android:clickable="true"
+            android:onClick="onMenuClick"
+            android:text="@string/by_name_menu06_text" />
+
+        <TextView
+            android:id="@+id/by_name_menu07"
+            style="@style/ByNameMenu"
+            android:clickable="true"
+            android:onClick="onMenuClick"
+            android:text="@string/by_name_menu07_text" />
+    </LinearLayout>
+
+    <include layout="@layout/main_menu" >
+    </include>
+
+</LinearLayout>

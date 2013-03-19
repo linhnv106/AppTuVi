@@ -6,5 +6,106 @@
     <string name="hello_world">Hello world!</string>
     <string name="sample_date">20</string>
     <string name="date_des_sample_text">Have a good day !</string>
+    <string name="astrology_menu_today_txt">Hom Nay</string>
+    <string name="astrology_menu_new_week_txt">Tuan Moi</string>
+    <string name="astrology_menu_new_month_txt">Thang Moi</string>
+    <string name="astrology_menu_new_year_txt">Nam moi</string>
+    <string name="astrology_menu_random_date_txt">Ngay Bat Ky</string>
+    <string name="astrology_menu_random_week_txt">Tuan Bat Ky</string>
+    <string name="by_name_menu01_text">Bí mật đằng sau tên bạn</string>
+    <string name="by_name_menu02_text">Số mệnh qua họ và tên</string>
+    <string name="by_name_menu03_text">Tên bạn tiết lộ cách “yêu”</string>
+    <string name="by_name_menu04_text">Bói tên bạn và tên người ấy</string>
+    <string name="by_name_menu05_text">Bói nickname</string>
+    <string name="by_name_menu06_text">Xem tên nước ngoài của bạn</string>
+    <string name="by_name_menu07_text">Xem tên giang hồ</string>
+    <string name="love_menu01_text">Xem tuổi 2 bạn có hữu duyên </string>
+    <string name="love_menu02_text">Chọn vợ chồng theo bản mệnh </string>
+    <string name="love_menu03_text">Bói tình yêu qua nhóm máu </string>
+    <string name="view_foreign_instruction_txt">Bạn đã bao giờ nghĩ đến tên từ thời Cổ đại Trung Quốc, hoặc tên tiếng Hàn Quốc, tiếng Lào của bạn chưa? Hãy nhập ngày tháng năm sinh để xem tên ai hay nhất nhé! Bạn hãy thử xem! </string>
+    <string name="errant_name_instruction">Bạn có muốn biết tên giang hồ của bạn như thế nào không? Nhập họ và tên để biết bạn nhé. Bạn hãy thử xem! </string>
+    <string name="enter_your_name_hint">Nhập họ và tên của bạn </string>
+    <string name="get_data_failed"> No data !</string>
+    <string name="date_calendar_content_title">Là ngày Hành Tổng quan ngày Việc nên làm Không nên làm Giờ Hoàng Đạo Hướng xuất hành </string>
+    <string name="couple_telling_by_age_instruction_txt">Theo quan niệm phương Đông. Mỗi người sinh ra đều được gắn với từng con giáp. Hãy nhập tuổi của bạn và người ấy để biết tình duyên của 2 người nhé. 
+Bạn hãy thử xem! </string>
+    <string name="couple_telling_by_blood_type_instruction_txt">Mỗi người sinh ra đều có nhóm máu di truyền từ cha mẹ, bao gồm các nhóm: A, B, AB, O. Mỗi nhóm máu sẽ có tính cách riêng. Bạn hãy xem sự kết đôi của các nhóm máu thế nào nhé. 
+Bạn hãy thử xem! </string>
+    <string name="secret_of_birthday_title_txt">Bật mí ngày sinh </string>
+    <string name="secret_of_birthday_instruction_txt">Ngày sinh của bạn có liên quan đến cá tính của bạn hay không, hãy tìm hiểu xem bạn nhé! 
+Bạn hãy chọn ngày sinh của mình để xem! </string>
+    <string name="star_group_title_txt">Khám phá tình yêu qua chòm sao </string>
+    <string name="star_group_instruction_txt">Theo quan niệm phương Tây, ngày sinh của bạn sẽ quyết định bạn ứng với chòm sao nào. Mỗi chòm sao sẽ có những đặc điểm hình dáng, tính cách riêng. Khám phá tình yêu của mình và của "đối phương" qua các chòm sao, bạn sẽ thấy khá lý thú. Bạn hãy chọn ngày và tháng sinh của mình để xem </string>
+    <string name="secret_of_star_group_title_txt">Bí ẩn chòm sao của bạn </string>
+    <string name="secret_of_star_group_instruction_txt">Mỗi chòm sao đều có biểu tượng và bí mật riêng. Đây là những khám phá về những bí ẩn đó. 
+Bạn hãy chọn ngày và tháng sinh của mình để xem</string>
+    <string name="keep_your_love_title_txt">Bí quyết giữ trọn trái tim </string>
+    <string name="keep_your_love_instruction_txt">Mỗi người sinh ra dưới chòm sao chiếu mệnh khác nhau, nên có tính cách và sở thích khác nhau. Nếu biết được điều mà “người ấy” mong muốn, bạn sẽ có cách làm “người ấy” hài lòng và chung thủy với bạn mãi mãi. Bạn hãy chọn ngày và tháng của "người ấy” để xem! </string>
+    <string name="view_your_talent_title_txt">KHÁM PHÁ TÀI NĂNG CỦA BẠN </string>
+    <string name="view_your_talent_instruction_txt">Mỗi người sẽ có cung chiếu mệnh là 1 con số đặc biệt ứng với tài năng của họ. Chúng đòi hỏi chủ nhân của mình phải luôn cố gắng gìn giữ tinh thần và tâm hồn của mình. Chúng tặng cho họ quyền uy đối với mọi người, nhưng cũng đặt ra cho họ những thách thức lớn. Bạn hãy chọn ngày và tháng sinh của mình để xem! </string>
+    <string name="horoscope_whole_life_title_txt">TỬ VI TRỌN ĐỜI </string>
+    <string name="horoscope_whole_life_instruction_txt">Mỗi người sinh ra đều có vận mệnh riêng về công danh, sự nghiệp, tình duyên, gia đình, tuổi thọ... 
+Bạn hãy chọn năm sinh của mình để xem! </string>
+    <string name="partner_by_age_title_txt">TÌM BẠN HỢP TÁC ĂN Ý </string>
+    <string name="partner_by_age_instruction_txt">Để biết đối tác làm ăn của bạn có hợp với bạn hay không.Mời bạn cùng khám phá nhé. 
+Bạn hãy thử xem!</string>
+    <string name="your_birthday_text"> Năm sinh của bạn</string>
+    <string name="your_partner_birthday_text">Năm sinh của đối tác </string>
+    <string name="enter_your_car_number_txt">Biển số xe của bạn </string>
+    <string name="compatibility01_title_txt">SỰ TƯƠNG HỢP GIỮA BXS VÀ NĂM SINH </string>
+    <string name="compatibility01_instruction_txt">Con người là tổng hoà các mối quan hệ, trong đó chịu sự ảnh hưởng chi phối của thiên nhiên và xã hội. Hãy xem năm sinh và biển số xe của bạn có tương hợp không nhé. Bạn hãy thử xem! </string>
+    <string name="enter_your_phone_number_txt">Biển số xe của bạn </string>
+    <string name="compatibility02_title_txt">SỰ TƯƠNG HỢP GIỮA SỐ ĐT VÀ NĂM SINH </string>
+    <string name="compatibility02_instruction_txt">Con người là tổng hoà các mối quan hệ, trong đó chịu sự ảnh hưởng chi phối của thiên nhiên và xã hội. Hãy xem năm sinh và số điện thoại của bạn có tương hợp không nhé. Bạn hãy thử xem! </string>
+
+    <string-array name="ages_array_01">
+        <item>Tuổi của bạn </item>
+        <item>Tí</item>
+        <item>Sửu</item>
+        <item>Dần</item>
+        <item>Mão</item>
+        <item>Thìn</item>
+        <item>Tỵ</item>
+        <item>Ngọ</item>
+        <item>Mùi</item>
+        <item>Thân</item>
+        <item>Dậu</item>
+        <item>Tuất</item>
+        <item>Hợi</item>
+    </string-array>
+    <string-array name="ages_array_02">
+        <item>Tuổi của người ấy </item>
+        <item>Tí</item>
+        <item>Sửu</item>
+        <item>Dần</item>
+        <item>Mão</item>
+        <item>Thìn</item>
+        <item>Tỵ</item>
+        <item>Ngọ</item>
+        <item>Mùi</item>
+        <item>Thân</item>
+        <item>Dậu</item>
+        <item>Tuất</item>
+        <item>Hợi</item>
+    </string-array>
+    <string-array name="blood_type">
+        <item>Nhóm máu</item>
+        <item>A</item>
+        <item>B</item>
+        <item>0</item>
+        <item>AB</item>
+    </string-array>
+    <string-array name="birthday_menus">
+        <item>Bật mí ngày sinh </item>
+        <item>Khám phá tình yêu qua chòm sao </item>
+        <item>Bí ẩn chòm sao của bạn </item>
+        <item>Bí quyết giữ trọn trái tim </item>
+        <item>Xem chuyện hẹn hò của bạn </item>
+        <item>Khám phá tài năng của bạn </item>
+        <item>Tử vi trọn đời </item>
+        <item>Tìm bạn hợp tác ăn ý </item>
+        <item>Sự tương hợp giữa biển số xe và năm sinh </item>
+        <item>Sự tương hợp giữa số điện thoại và năm sinh </item>
+    </string-array>
 
 </resources>

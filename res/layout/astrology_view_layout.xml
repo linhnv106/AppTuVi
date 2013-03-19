@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="1" >
+
+        <com.ditech.linhnv.apps.tuvi.view.CircleLayout
+            xmlns:app="http://schemas.android.com/apk/res/com.ditech.linhnv.apps.tuvi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            app:angleOffset="90.0" >
+
+            <ImageButton android:id="@+id/aries_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/taurus_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/gemini_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/cancer_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/leo_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/virgo_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/libra_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/scorpio_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/sagittarius_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/capricornus_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/aquarius_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+
+            <ImageButton android:id="@+id/pisces_imgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bach_duog"
+                android:onClick="onBtnClick" />
+        </com.ditech.linhnv.apps.tuvi.view.CircleLayout>
+    </FrameLayout>
+
+    <include layout="@layout/main_menu" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/love_menu01"
+            style="@style/ByNameMenu"
+            android:clickable="true"
+            android:onClick="onMenuClick"
+            android:text="@string/love_menu01_text" />
+
+        <TextView
+            android:id="@+id/love_menu02"
+            style="@style/ByNameMenu"
+            android:clickable="true"
+            android:onClick="onMenuClick"
+            android:text="@string/love_menu02_text" />
+
+        <TextView
+            android:id="@+id/love_menu03"
+            style="@style/ByNameMenu"
+            android:clickable="true"
+            android:onClick="onMenuClick"
+            android:text="@string/love_menu03_text" />
+    </LinearLayout>
+
+    <include layout="@layout/main_menu" >
+    </include>
+
+</LinearLayout>
